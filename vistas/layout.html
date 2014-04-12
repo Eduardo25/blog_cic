@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Blog</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/principal.css" />
+</head>
+<body>
+	<header>
+		<h1>{% block titulo %}{% endblock %}</h1>
+		<nav>
+			<ul>
+				<li>IINICIO</li>
+				<li>BLOG</li>
+				<li>CONTACTO</li>
+			</ul>
+		</nav>
+	</header>
+	{% block contenido %}
+	{% endblock %}
+	<footer>
+		<div id="sociales"> 
+			<h2>Siguenos en:</h2>
+			<img class="social" src="./imagenes/vidrio/facebook.png" />
+			<img class="social" src="./imagenes/vidrio/twitter.png" />
+			<img class="social" src="./imagenes/vidrio/google.png" />
+		</div>
+		<div id="suscribir">
+			<h2>Suscribir:</h2>
+			<form action="/suscribir" method="post">
+			<label for="suscribir-email">Email:</label>
+			<input id="suscribir-email" type="text" required="" placeholder="ejemplo@email.com" name="email" />
+			<input type="submit" value="Enviar" />
+			</form>
+		</div>
+	</footer>
+</body>
+</html>

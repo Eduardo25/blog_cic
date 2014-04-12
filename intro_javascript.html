@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF8" />
+		<title>JavaScript Intro</title>
+		<script>
+		/*
+			var saludo="Hola a todos (otra vez)";
+			var nombre= prompt("Escribe tu nombre");
+			
+			document.write("Hola a todos");
+			document.write(saludo);
+			document.write(nombre);
+		*/
+		
+		// Forma 1 de declarar funciones
+		function suma(a,b) {
+			var respuesta = a + b;
+			return respuesta;
+		}
+		
+		/* var calculo = suma(5,3);
+		document.write(calculo); */
+		
+		//forma 2 de declarar funciones
+		var multi = function(a,b){
+			var respuesta = a*b;
+			
+			return respuesta;
+		};
+		
+		/* var calculo = multi(8,9);
+		document.write(calculo); */
+		
+		//forma 3 de  declarar funciones
+		function operacion(miFuncion){
+			return miFuncion(5,2);
+		}
+		
+		/*
+		var calculo = operacion(multi);
+		document.write(calculo);
+		*/
+		/*
+		var nombre= prompt("Escribe tu nombre");
+		var direccion= prompt("Escribe tu direccion");
+		var telefono= prompt("Escribe tu telefono");
+		
+		document.write("<div>Nombre: " + nombre + "</div>");
+		document.write("<div>Direccion: " + direccion + "</div>");
+		document.write("<div>Telefono: " + telefono + "</div>");
+		*/
+		
+		//Declara un objeto en JavaScript
+		var persona = {
+			nombre: "nombre",
+			edad: 25,
+			saludar: function(){
+				document.write("Hola a todos");
+			}
+		};
+		
+		document.write(persona.nombre);
+		persona.saludar();
+		
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

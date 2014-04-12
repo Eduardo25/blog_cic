@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block titulo %}
+	CONTACTO
+{% endblock %}
+
+
+{% block contenido %}
+
+	<h2>Contactanos</h2>
+	<form id="form" action="/contactar" method="post">
+			<div>
+				<label>Nombre:</label>
+				<input type="text" required="" placeholder="Juan Prerez" name="nombre" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" required="" placeholder="ejemplo@email.com" name="email" />
+			</div>
+			<div>
+				<label>Website:</label>
+				<input type="url" placeholder="www.tusitioweb.com" name="website" />
+			</div>
+			<div>
+				<label>Edad:</label>
+				<input type="number" placeholder="" name="edad" />
+			</div>
+			<div>
+				<label>Comentario:</label>
+				<textarea name="comentario" required></textarea>
+			</div>
+				<input type="submit" value="Enviar" />
+			</form>
+
+{% endblock %}

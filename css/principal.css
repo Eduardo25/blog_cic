@@ -1,0 +1,166 @@
+body {
+	font-size: 18px;
+	font-family: 'Poiret One', cursive;
+}
+footer {
+	background-color: rgb(52,52,52);
+	border-top: #E95644 solid .3em;
+	color: #FFF;
+	padding: 2em;
+}
+header {
+	background-color: #e95644;
+	color: #FFF;
+}
+
+header h1 {
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding: 1em;	
+}
+
+input:valid {
+	background: url("/imagenes/correcto.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: top right; 
+}
+
+input:invalid {
+	background: url("/imagenes/incorrecto.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: top right; 
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+#form {
+	text-align:center;
+}
+
+#presentacion {
+	background-image: url("../imagenes/portadas/portada4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFF;
+	height: 30em;
+	line-height: 30em;
+	text-align:center;
+}
+
+#presentacion h1 {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+#testimonios {
+	background-color: #666666;
+	color: #FFF;
+	padding: 2em;
+}
+
+#servicios {
+	background-color: #f5f5f5;
+	padding: 2em;
+	text-align: center;
+}
+
+#sociales {
+	display: inline-block;
+	vertical-align: top;
+	width: 68%;
+}
+
+#suscribir {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+}
+
+#suscribir-email {
+	color: #000;
+	transition: all 1s linear;
+	width: 10em;
+}
+
+#suscribir-email:focus {
+	width: 13em;
+}
+
+.flexible {
+	max-width: 100%;
+}
+
+.servicio {
+	color: #666;
+	display: inline-block;
+	text-align: center;
+	transition: all 1s ease;
+	width: 30%;
+}
+.servicio:hover {
+	-webkit-transform: rotateX(180deg);
+}
+
+.social {
+	transition: all 0.5s ease;
+}
+
+.social:hover {
+	-webkit-transform: rotate(360deg);
+}
+
+.testimonios {
+	display: inline-block;
+	vertical-align: middle;
+	width: 48%;
+}
+
+
+@media screen and (max-width:1100px){
+	#sociales, #suscribir{
+		width:48%;
+	}
+}
+
+@media screen and (max-width:750px){
+	#sociales, #suscribir {
+		text-align: center;
+		width:100%;
+	}
+}
+
+@media screen and (max-width:928px){
+	#testimonios {
+		font-size: 1.5em;
+	}
+	
+	.testimonios {
+		text-align: center;
+		width:100%;
+	}	
+	
+	.servicio {
+		text-align: center;
+		width: 48%;
+	}	
+}
+
+@media screen and (max-width: 620px){
+	.servicio {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+
+

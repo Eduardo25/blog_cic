@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block titulo %}
+	BLOG
+{% endblock %}
+
+
+{% block contenido %}
+
+	<h2>Blog</h2>
+
+	{% if posts.length ==  0 %}
+		<h3>No hay artículos aún</h3>
+	{% endif %}
+
+	{% for post in posts %}
+		<h3>{{post.titulo}}</h3>
+		<p>{{post.descripcion}}</p>
+	{% endfor %}
+
+{% endblock %}
